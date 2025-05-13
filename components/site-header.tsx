@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Shield, X, Menu } from "lucide-react"
+import { TerminalSquare, X, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { usePathname } from "next/navigation"
@@ -28,8 +28,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-white dark:bg-gray-900">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl" onClick={closeMenu}>
-          <Shield className="h-5 w-5 text-cyber-500" />
-          <span>TuNombre</span>
+        <TerminalSquare className="w-6 h-6 text-cyber-500" />
+          <span>TechByNina</span>
         </Link>
 
         {/* Navegación de escritorio */}
@@ -64,7 +64,7 @@ export function SiteHeader() {
               isActive("/#habilidades") ? "text-cyber-500" : "hover:text-cyber-500"
             }`}
           >
-            Habilidades
+            Skills
           </Link>
           <Link
             href="/#contacto"

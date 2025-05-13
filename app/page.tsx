@@ -190,7 +190,7 @@ export default function Home() {
                 <Code className="h-4 w-4" />
                 <span>Proyectos e Investigaciones</span>
               </div>
-              <h2 className="text-3xl font-bold tracking-tight">Mis Trabajos en Ciberseguridad</h2>
+              <h2 className="text-3xl font-bold tracking-tight">Mis proyectos</h2>
               <p className="text-muted-foreground max-w-3xl">
                 Una selección de mis proyectos e investigaciones más relevantes en el campo de la ciberseguridad,
                 demostrando mis habilidades técnicas y mi enfoque en la protección de sistemas.
