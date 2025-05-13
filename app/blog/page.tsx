@@ -163,28 +163,6 @@ export default function BlogPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center">
-              <div className="flex flex-wrap gap-2">
-                <Button variant="outline" size="sm" className="rounded-full border-cyber-200 dark:border-cyber-800">
-                  Todos
-                </Button>
-                {categories.map((category) => (
-                  <Button key={category} variant="ghost" size="sm" className="rounded-full">
-                    {category}
-                  </Button>
-                ))}
-              </div>
-
-              <div className="relative w-full md:w-64">
-                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                <Input
-                  type="search"
-                  placeholder="Buscar artículos..."
-                  className="w-full pl-8 bg-white/80 dark:bg-gray-800/50"
-                />
-              </div>
-            </div>
-
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {blogPosts.map((post) => (
                 <Link
