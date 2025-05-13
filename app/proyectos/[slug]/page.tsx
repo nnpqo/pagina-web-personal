@@ -628,11 +628,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
-      <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-gray-900/80 dark:supports-[backdrop-filter]:bg-gray-900/60">
-        <div className="container flex h-16 items-center justify-between">
-          <SiteHeader />
-        </div>
-      </header>
+      <SiteHeader />
 
       <main className="container py-8 md:py-12">
         <div className="flex items-center gap-2 mb-8">
