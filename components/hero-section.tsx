@@ -37,7 +37,7 @@ export function HeroSection() {
               </div>
               <h3 className="text-xl font-bold">Seguridad</h3>
               <p className="text-sm text-muted-foreground text-center">
-              análisis de amenazas, monitoreo de eventos y detección de incidentes en entornos de seguridad defensiva (SOC).
+              Análisis de amenazas, monitoreo de eventos y detección de incidentes en entornos de seguridad defensiva (SOC).
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 rounded-lg border bg-white/80 dark:bg-gray-800/50 p-4 transition-all hover:shadow-md">

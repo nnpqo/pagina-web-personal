@@ -173,7 +173,7 @@ export default function Home() {
                 Desarrolladora de software
               </h2>
               <p className="text-muted-foreground text-center lg:text-left">
-              Soy una entusiasta de la tecnología con especial interés en ciberseguridad, control de calidad de software 
+              Hola me llamo Yanina, soy una entusiasta de la tecnología con especial interés en ciberseguridad, control de calidad de software 
               e inteligencia artificial. Me apasiona aprender constantemente y aplicar mis conocimientos en entornos reales
                que representen desafíos técnicos. Actualmente me encuentro en formación como desarrolladora junior, explorando 
                herramientas, metodologías y marcos modernos que fortalezcan mis habilidades en defensa informática, automatización
@@ -181,8 +181,8 @@ export default function Home() {
                  dinámicos y contribuir con soluciones seguras, eficientes e innovadoras.
               </p>
               <p className="text-muted-foreground text-center lg:text-left">
-                Este blog es un espacio donde comparto mis proyectos, investigaciones y conocimientos sobre
-                ciberseguridad, hacking ético y desarrollo seguro.
+                Este blog es un espacio donde comparto mis proyectos, investigaciones, conocimientos sobre
+                ciberseguridad, control de calidad y herramientas de inteligencia artificial.
               </p>
               <div className="flex gap-4">
                 <Button asChild variant="default" className="bg-cyber-600 hover:bg-cyber-700">
@@ -206,12 +206,12 @@ export default function Home() {
                   <h3 className="text-xl font-bold">Certificaciones</h3>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="rounded-md border p-2 text-center bg-white/50 dark:bg-gray-800/50">
-                      <p className="font-medium">CompTIA Security+</p>
-                      <p className="text-xs text-muted-foreground">En progreso</p>
+                      <p className="font-medium">FCF - Introduction to the Thread Landscape 3.0</p>
+                      <p className="text-xs text-muted-foreground">Fortinet</p>
                     </div>
                     <div className="rounded-md border p-2 text-center bg-white/50 dark:bg-gray-800/50">
-                      <p className="font-medium">CCNA</p>
-                      <p className="text-xs text-muted-foreground">Cisco</p>
+                      <p className="font-medium">Carrera de seguridad informática</p>
+                      <p className="text-xs text-muted-foreground">Platzi</p>
                     </div>
                   </div>
                 </div>
@@ -401,14 +401,14 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tight">¿Hablamos?</h2>
               <p className="text-muted-foreground">
                 Si tienes alguna consulta, propuesta de colaboración o simplemente quieres charlar,
-                no dudes en contactarme. Estaré encantado de hablar contigo.
+                no dudes en contactarme. Estaré encantada de hablar contigo.
               </p>
 
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">Sígueme en redes</h3>
                 <SocialLinks />
               </div>
-
+              {/*
               <div className="mt-8 p-6 rounded-lg border bg-white/80 dark:bg-gray-800/50">
                 <h3 className="text-xl font-bold mb-2">Newsletter</h3>
                 <p className="text-sm text-muted-foreground mb-4">
@@ -423,7 +423,8 @@ export default function Home() {
                   />
                   <Button className="bg-cyber-600 hover:bg-cyber-700">Suscribirse</Button>
                 </div>
-              </div>
+              </div> 
+              */} 
             </div>
 
             <div className="rounded-lg border bg-white/80 dark:bg-gray-800/50 p-6 shadow-sm">
