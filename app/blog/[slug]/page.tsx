@@ -6,6 +6,8 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Badge } from "@/components/ui/badge"
 import { notFound } from "next/navigation"
 import { SocialLinks } from "@/components/social-links"
+import { SiteHeader } from "@/components/site-header"
+import { Footer } from "@/components/site-footer"
 
 // Base de datos simulada de artículos del blog
 const blogData = [
@@ -644,54 +646,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
       <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-gray-900/80 dark:supports-[backdrop-filter]:bg-gray-900/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <Shield className="h-5 w-5 text-cyber-500" />
-            <span>TuNombre</span>
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/#sobre-mi" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Sobre Mí
-            </Link>
-            <Link href="/#proyectos" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Proyectos
-            </Link>
-            <Link href="/blog" className="text-sm font-medium text-cyber-500 transition-colors">
-              Blog
-            </Link>
-            <Link href="/#habilidades" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Habilidades
-            </Link>
-            <Link href="/#contacto" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Contacto
-            </Link>
-          </nav>
-          <div className="hidden md:flex items-center gap-2">
-            <ThemeToggle />
-            <Button variant="outline" size="sm" asChild>
-              <Link href="/cv.pdf" target="_blank">
-                Descargar CV
-              </Link>
-            </Button>
-          </div>
-          <Button variant="ghost" size="sm" className="md:hidden">
-            <span className="sr-only">Abrir menú</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-          </Button>
+          <SiteHeader />
         </div>
       </header>
 
@@ -844,27 +799,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </article>
       </main>
 
-      <footer className="border-t bg-white/50 dark:bg-gray-900/50 mt-16">
-        <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
-          <div className="flex items-center gap-4 px-8 md:px-0">
-            <Shield className="h-5 w-5 text-cyber-500" />
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} TuNombre. Todos los derechos reservados.
-            </p>
-          </div>
-          <nav className="flex gap-4 sm:gap-6">
-            <Link
-              href="/politica-privacidad"
-              className="text-xs text-muted-foreground hover:underline underline-offset-4"
-            >
-              Política de Privacidad
-            </Link>
-            <Link href="/terminos" className="text-xs text-muted-foreground hover:underline underline-offset-4">
-              Términos de Servicio
-            </Link>
-          </nav>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
