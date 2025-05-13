@@ -629,7 +629,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
       <SiteHeader />
-
+      
       <main className="container py-8 md:py-12">
         <div className="flex items-center gap-2 mb-8">
           <Button variant="ghost" size="sm" asChild>
