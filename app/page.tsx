@@ -8,6 +8,7 @@ import Image from "next/image"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ContactForm } from "@/components/contact-form"
 import { SocialLinks } from "@/components/social-links"
+import { SiteHeader } from "@/components/site-header"
 
 // Datos de proyectos destacados
 const featuredProjects = [
@@ -103,60 +104,9 @@ const recentPosts = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
-      <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-gray-900/80 dark:supports-[backdrop-filter]:bg-gray-900/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <Shield className="h-5 w-5 text-cyber-500" />
-            <span>TechByNina</span>
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="#sobre-mi" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Sobre Mí
-            </Link>
-            <Link href="#proyectos" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Proyectos
-            </Link>
-            <Link href="#blog" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Blog
-            </Link>
-            <Link href="#habilidades" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Skills
-            </Link>
-            <Link href="#contacto" className="text-sm font-medium hover:text-cyber-500 transition-colors">
-              Contacto
-            </Link>
-          </nav>
-          <div className="hidden md:flex items-center gap-2">
-            <ThemeToggle />
-            <Button variant="outline" size="sm" asChild>
-              <Link href="/cv.pdf" target="_blank">
-                Descargar CV
-              </Link>
-            </Button>
-          </div>
-          <Button variant="ghost" size="sm" className="md:hidden">
-            <span className="sr-only">Abrir menú</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6"
-            >
-              <line x1="4" x2="20" y1="12" y2="12" />
-              <line x1="4" x2="20" y1="6" y2="6" />
-              <line x1="4" x2="20" y1="18" y2="18" />
-            </svg>
-          </Button>
-        </div>
-      </header>
-      <main className="container py-8 md:py-12">
+        <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
+        <SiteHeader />
+        <main className="container py-8 md:py-12">
         <HeroSection />
 
         <section id="sobre-mi" className="py-12 md:py-16">
