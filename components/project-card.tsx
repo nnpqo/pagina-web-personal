@@ -9,7 +9,7 @@ import { ExternalLink, ArrowRight } from "lucide-react"
 interface ProjectCardProps {
   title: string
   description: string
-  tags?: string[]  // <- cambiado a opcional
+  tags?: string[] 
   image: string
   link?: string
   slug?: string

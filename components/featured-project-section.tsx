@@ -6,7 +6,7 @@ import { Code } from "lucide-react"
 
 export default async function FeaturedProjectsSection() {
   const projects = await getAllProjects()
-  const featured = projects.slice(0, 3) // o usa alguna lógica como project.featured
+  const featured = projects.slice(0, 3) 
 
   return (
     <section id="proyectos" className="py-12 md:py-16 border-t">

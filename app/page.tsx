@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Code, User, Mail, BookOpen } from "lucide-react";
+import { Shield, User, Mail} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SkillBadge } from "@/components/skill-badge";
 import { HeroSection } from "@/components/hero-section";

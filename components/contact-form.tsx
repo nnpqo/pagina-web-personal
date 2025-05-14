@@ -28,7 +28,7 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      // Aquí iría la llamada a tu API para enviar el correo
+      // API para enviar el correo
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
