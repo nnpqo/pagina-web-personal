@@ -2,10 +2,11 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { TerminalSquare, X, Menu } from "lucide-react"
+import { X, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { usePathname } from "next/navigation"
+import Image from "next/image";
 
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,7 +29,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b bg-white dark:bg-gray-900">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl" onClick={closeMenu}>
-        <TerminalSquare className="w-6 h-6 text-cyber-500" />
+        <Image
+          src="/Icon.png"
+          alt="Icono personalizado"
+          width={24}
+          height={24}
+          className="object-contain"
+        />
           <span>TechByNina</span>
         </Link>
 
