@@ -10,7 +10,9 @@ interface ProjectData {
   image: string;
   tags: string[];
   link?: string; 
+  repo?: string;
   content: string;
+  documents?: { name: string; url: string }[];
 }
 
 const projectDir = path.join(process.cwd(), "app", "content", "proyectos");

@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site-header";
 import { Footer } from "@/components/site-footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, ExternalLink } from "lucide-react";
+import { ArrowLeft, Calendar, ExternalLink, Github } from "lucide-react";
 
 interface ProjectPageProps {
   params: {
@@ -40,6 +40,27 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         <article className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{project.title}</h1>
 
+          <div className="flex flex-wrap items-center gap-6 mb-6 text-sm text-muted-foreground"></div>
+          <div className="relative h-64 md:h-96 w-full mb-8 rounded-lg overflow-hidden">
+            <Image
+              src={project.image || "/placeholder.svg"}
+              alt={project.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+          
+          <div className="flex flex-wrap gap-2 mb-8">
+            {project.tags?.map((tag) => (
+              <Badge
+                key={tag}
+                variant="secondary"
+                className="bg-cyber-100 text-cyber-700 dark:bg-cyber-900/30 dark:text-cyber-300"
+              >
+                {tag}
+              </Badge>
+            ))}
+          </div>
           <div className="flex flex-wrap items-center gap-6 mb-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4" />
@@ -56,31 +77,34 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
                 <ExternalLink className="h-4 w-4" /> Demo en vivo
               </a>
             )}
-          </div>
-
-          <div className="relative h-64 md:h-96 w-full mb-8 rounded-lg overflow-hidden">
-            <Image
-              src={project.image || "/placeholder.svg"}
-              alt={project.title}
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div className="flex flex-wrap gap-2 mb-8">
-            {project.tags?.map((tag) => (
-              <Badge
-                key={tag}
-                variant="secondary"
-                className="bg-cyber-100 text-cyber-700 dark:bg-cyber-900/30 dark:text-cyber-300"
+            {project.repo && (
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-cyber-500 transition-colors"
               >
-                {tag}
-              </Badge>
-            ))}
+              <Github className="h-4 w-4" />
+              <span>Código fuente</span>
+              </a>
+            )}
           </div>
-
           <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
-            <ReactMarkdown>{project.content}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              img: ({ src = "", alt = "" }) => (
+                <img
+                  src={String(src)}
+                  alt={alt}
+                  width={800}
+                  height={600}
+                  className="rounded border shadow"
+                />
+              ),
+            }}
+          >
+            {project.content}
+          </ReactMarkdown>
           </div>
         </article>
       </main>
