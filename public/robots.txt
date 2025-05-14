@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://techbynina.tech
+
+# Sitemaps
+Sitemap: https://techbynina.tech/sitemap.xml
