@@ -7,9 +7,13 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portfolio de Desarrollador Junior en Ciberseguridad",
-  description: "Portfolio personal de un desarrollador junior especializado en ciberseguridad",
-    generator: 'v0.dev'
+  title: "Techbynina",
+  description: "Desarrolladora de software",
+  icons: {
+    icon: "/Icon.png",
+    shortcut: "/Icon.png",
+    apple: "/Icon.png",
+  }
 }
 
 export default function RootLayout({
