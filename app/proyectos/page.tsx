@@ -1,120 +1,14 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ProjectCard } from "@/components/project-card"
-import { Shield, ArrowLeft } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { SiteHeader } from "@/components/site-header"
-import { Footer } from "@/components/site-footer"
+import Link from "next/link";
+import Image from "next/image";
+import { getAllProjects } from "@/lib/markdownProjects";
+import { SiteHeader } from "@/components/site-header";
+import { Footer } from "@/components/site-footer";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
-// Datos de proyectos
-const projects = [
-  {
-    title: "Análisis de Vulnerabilidades en Aplicaciones Web",
-    description:
-      "Desarrollo de una herramienta automatizada para detectar vulnerabilidades comunes en aplicaciones web como XSS, CSRF y SQL Injection.",
-    tags: ["Python", "OWASP", "Seguridad Web"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "analisis-vulnerabilidades-web",
-  },
-  {
-    title: "Sistema de Detección de Intrusiones",
-    description:
-      "Implementación de un IDS basado en análisis de comportamiento para detectar actividades sospechosas en redes corporativas.",
-    tags: ["Snort", "Linux", "Análisis de Tráfico"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "sistema-deteccion-intrusiones",
-  },
-  {
-    title: "Auditoría de Seguridad en Infraestructura Cloud",
-    description:
-      "Desarrollo de metodología y herramientas para auditar la seguridad en entornos AWS y Azure, identificando configuraciones incorrectas.",
-    tags: ["AWS", "Azure", "Cloud Security"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "auditoria-seguridad-cloud",
-  },
-  {
-    title: "Análisis Forense Digital",
-    description:
-      "Proyecto de investigación sobre técnicas avanzadas de análisis forense en dispositivos móviles y recuperación de datos.",
-    tags: ["Forense Digital", "Mobile", "Recuperación"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "analisis-forense-digital",
-  },
-  {
-    title: "Framework de Pentesting",
-    description:
-      "Desarrollo de un framework personalizado para realizar pruebas de penetración siguiendo metodologías estándar de la industria.",
-    tags: ["Pentesting", "Kali Linux", "Automatización"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "framework-pentesting",
-  },
-  {
-    title: "Seguridad en IoT",
-    description:
-      "Investigación y desarrollo de protocolos de seguridad para dispositivos IoT, enfocado en la protección de datos y comunicaciones.",
-    tags: ["IoT", "Seguridad", "Protocolos"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "seguridad-iot",
-  },
-  {
-    title: "Herramienta de Análisis de Malware",
-    description:
-      "Desarrollo de una herramienta para el análisis estático y dinámico de malware, con capacidades de sandbox y generación de informes.",
-    tags: ["Malware", "Análisis", "Python"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "herramienta-analisis-malware",
-  },
-  {
-    title: "Seguridad en Aplicaciones Móviles",
-    description:
-      "Investigación y desarrollo de metodologías para evaluar la seguridad en aplicaciones móviles Android e iOS.",
-    tags: ["Mobile", "Android", "iOS"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "seguridad-aplicaciones-moviles",
-  },
-  {
-    title: "Hardening de Sistemas Linux",
-    description: "Desarrollo de scripts y guías para el endurecimiento de sistemas Linux en entornos empresariales.",
-    tags: ["Linux", "Hardening", "Bash"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "hardening-sistemas-linux",
-  },
-  {
-    title: "Seguridad en Contenedores",
-    description: "Implementación de soluciones de seguridad para entornos de contenedores Docker y Kubernetes.",
-    tags: ["Docker", "Kubernetes", "DevSecOps"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "seguridad-contenedores",
-  },
-  {
-    title: "Análisis de Tráfico de Red",
-    description: "Desarrollo de herramientas para el análisis avanzado de tráfico de red y detección de anomalías.",
-    tags: ["Wireshark", "Python", "Análisis"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "analisis-trafico-red",
-  },
-  {
-    title: "Seguridad en APIs",
-    description: "Metodología y herramientas para evaluar la seguridad en APIs REST y GraphQL.",
-    tags: ["API", "REST", "GraphQL"],
-    image: "/placeholder.svg?height=200&width=400",
-    link: "#",
-    slug: "seguridad-apis",
-  },
-]
+export default async function ProyectosPage() {
+  const projects = await getAllProjects();
 
-export default function ProyectosPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
       <SiteHeader />
@@ -131,23 +25,58 @@ export default function ProyectosPage() {
         <section className="py-8">
           <div className="space-y-6">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight">Todos mis proyectos</h1>
+              <h1 className="text-3xl font-bold tracking-tight">Proyectos de Ciberseguridad</h1>
               <p className="text-muted-foreground max-w-3xl">
-                Una colección completa de mis proyectos en el campo de la ciberseguridad, demostrando mis habilidades
-                técnicas y mi enfoque en la protección de sistemas.
+                Herramientas, investigaciones y aplicaciones desarrolladas para fortalecer la seguridad digital.
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project) => (
-                <ProjectCard
+                <Link
                   key={project.slug}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.tags}
-                  image={project.image}
-                  link={project.link}
-                  slug={project.slug}
-                />
+                  href={`/proyectos/${project.slug}`}
+                  className="group rounded-lg border bg-white/80 dark:bg-gray-800/50 overflow-hidden flex flex-col hover:shadow-md transition-all"
+                >
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-2 right-2 bg-cyber-500 text-white text-xs px-2 py-1 rounded-full">
+                      {project.tags?.[0]}
+                    </div>
+                  </div>
+                  <div className="p-4 flex-1 flex flex-col">
+                    <p className="text-xs text-cyber-500 mb-2">{project.date}</p>
+                    <h3 className="font-bold text-lg mb-2 group-hover:text-cyber-500 transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm flex-1 line-clamp-3">
+                      {project.description}
+                    </p>
+                    <div className="mt-4 flex items-center text-sm text-cyber-500 font-medium">
+                      Ver detalles
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -155,5 +84,7 @@ export default function ProyectosPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
+
+

@@ -9,13 +9,13 @@ import { ExternalLink, ArrowRight } from "lucide-react"
 interface ProjectCardProps {
   title: string
   description: string
-  tags: string[]
+  tags?: string[]  // <- cambiado a opcional
   image: string
-  link: string
-  slug?: string // slug para la URL del proyecto
+  link?: string
+  slug?: string
 }
 
-export function ProjectCard({ title, description, tags, image, link, slug }: ProjectCardProps) {
+export function ProjectCard({ title, description, tags = [], image, link, slug }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden transition-all hover:shadow-md bg-white/80 dark:bg-gray-800/50 border-cyber-100 dark:border-cyber-900/30 group">
       
@@ -24,7 +24,7 @@ export function ProjectCard({ title, description, tags, image, link, slug }: Pro
         <Link href={slug ? `/proyectos/${slug}` : "#"} className="block relative h-48 w-full overflow-hidden">
           <Image
             src={image || "/placeholder.svg"}
-            alt={title}
+            alt={title ?? "Imagen del proyecto"}
             fill
             className="object-cover transition-transform group-hover:scale-105"
           />
@@ -44,7 +44,7 @@ export function ProjectCard({ title, description, tags, image, link, slug }: Pro
       {/* Tags y enlaces */}
       <CardFooter className="flex flex-col items-start gap-4 p-4 pt-0">
         <div className="flex flex-wrap gap-2">
-          {tags.map((tag) => (
+          {(tags || []).map((tag) => (
             <Badge
               key={tag}
               variant="secondary"
@@ -77,4 +77,5 @@ export function ProjectCard({ title, description, tags, image, link, slug }: Pro
     </Card>
   )
 }
+
 
