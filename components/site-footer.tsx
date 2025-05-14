@@ -11,8 +11,8 @@ export function Footer() {
           <Image
             src="/Icon.png"
             alt="Icono personalizado"
-            width={24}
-            height={24}
+            width={40}
+            height={40}
             className="object-contain"
             />
           <p className="text-sm text-muted-foreground">
