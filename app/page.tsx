@@ -36,16 +36,20 @@ export default async function Home() {
                 Desarrolladora de software
               </h2>
               <p className="text-muted-foreground text-center lg:text-left">
-                Hola me llamo Yanina, soy una entusiasta de la tecnología con especial interés en ciberseguridad, control de calidad de software 
-                e inteligencia artificial. Me apasiona aprender constantemente y aplicar mis conocimientos en entornos reales
-                que representen desafíos técnicos. Actualmente me encuentro en formación como desarrolladora junior, explorando 
-                herramientas, metodologías y marcos modernos que fortalezcan mis habilidades en defensa informática, automatización
-                de pruebas y análisis de datos. Busco oportunidades que me permitan crecer profesionalmente, colaborar con equipos
-                dinámicos y contribuir con soluciones seguras, eficientes e innovadoras.
+              Hola, soy Yanina, una desarrolladora en formación con una fuerte pasión 
+              por la tecnología y el aprendizaje constante. A lo largo de mi camino he 
+              explorado distintas áreas del desarrollo de software: desde la programación 
+              y la automatización, hasta temas relacionados con la seguridad, la calidad y
+               la inteligencia artificial. No me limito a un solo campo porque disfruto 
+               entender cómo funcionan los sistemas desde distintas perspectivas 
+               y cómo se pueden mejorar.
+              Me considero autodidacta, curiosa y comprometida con mi crecimiento profesional.
               </p>
               <p className="text-muted-foreground text-center lg:text-left">
-                Este blog es un espacio donde comparto mis proyectos, investigaciones, conocimientos sobre
-                ciberseguridad, control de calidad y herramientas de inteligencia artificial.
+              Este blog es un espacio donde registro y comparto parte de ese proceso. 
+              Aquí encontrarás ideas, reflexiones, investigaciones y recursos que surgen 
+              mientras aprendo, construyo y evoluciono como desarrolladora. Mi objetivo es
+               seguir creciendo, colaborar con otros y aportar valor desde donde me encuentre.
               </p>
               <div className="flex gap-4">
                 <Button asChild variant="default" className="bg-cyber-600 hover:bg-cyber-700">

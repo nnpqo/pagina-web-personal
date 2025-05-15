@@ -7,8 +7,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.techbynina.tech"),
-  title: "Techbynina | Desarrolladora de Software",
+  metadataBase: new URL("https://techbynina.tech"),
+  title: {
+    default: "Techbynina | Desarrolladora de Software",
+    template: "%s | Techbynina",
+  },
   description:
     "Portafolio profesional de Yanina, desarrolladora especializada en ciberseguridad, control de calidad y desarrollo web moderno.",
   keywords: [
@@ -22,16 +25,16 @@ export const metadata: Metadata = {
     "Backend",
     "Techbynina",
     "Yanina",
-    "Desarrollador de paginas web",
+    "Desarrollador de páginas web",
     "Desarrolladora de software",
-    "Desarrolladora de aplicaciones",
-    "Desarrolladora de aplicaciones web",
-    "Desarrolladora de aplicaciones móviles",
+    "Aplicaciones web",
+    "Aplicaciones móviles",
   ],
   authors: [{ name: "Yanina", url: "https://techbynina.tech" }],
   creator: "Yanina",
   robots: "index, follow",
   applicationName: "Techbynina",
+
   openGraph: {
     title: "Techbynina | Desarrolladora de Software",
     description:
@@ -42,13 +45,22 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Icon.png", 
+        url: "https://techbynina.tech/Icon.png", 
         width: 1200,
         height: 630,
         alt: "Portafolio de Techbynina",
       },
     ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Techbynina | Desarrolladora de Software",
+    description: "Portafolio de Yanina con enfoque en desarrollo web y ciberseguridad.",
+    images: ["https://techbynina.tech/Icon.png"],
+    creator: "@tu_usuario_twitter", 
+  },
+
   icons: {
     icon: "/Icon.png",
     shortcut: "/Icon.png",
@@ -63,7 +75,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

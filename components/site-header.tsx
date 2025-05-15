@@ -122,7 +122,7 @@ export function SiteHeader() {
                 Proyectos
               </Link>
               <Link
-                href="/blog"
+                href="/#blog"
                 className="text-base font-medium py-2 px-4 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
                 onClick={closeMenu}
               >
