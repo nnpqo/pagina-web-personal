@@ -8,6 +8,7 @@ import { Footer } from "@/components/site-footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, ExternalLink, Github } from "lucide-react";
+import rehypeRaw from "rehype-raw";
 
 interface ProjectPageProps {
   params: {
@@ -91,14 +92,14 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
           </div>
           <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
           <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
             components={{
               img: ({ src = "", alt = "" }) => (
                 <img
-                  src={String(src)}
+                  src={src}
                   alt={alt}
-                  width={800}
-                  height={600}
-                  className="rounded border shadow"
+                  className="rounded border shadow my-4 mx-auto"
+                  style={{ maxWidth: "100%", height: "auto" }}
                 />
               ),
             }}

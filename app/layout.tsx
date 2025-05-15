@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.techbynina.tech"),
   title: "Techbynina | Desarrolladora de Software",
   description:
     "Portafolio profesional de Yanina, desarrolladora especializada en ciberseguridad, control de calidad y desarrollo web moderno.",

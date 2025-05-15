@@ -25,9 +25,9 @@ export default async function BlogPage() {
         <section className="py-8">
           <div className="space-y-6">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight">Blog de Ciberseguridad</h1>
+              <h1 className="text-3xl font-bold tracking-tight">Blog</h1>
               <p className="text-muted-foreground max-w-3xl">
-                Artículos, tutoriales y análisis sobre temas actuales de ciberseguridad, hacking ético y desarrollo seguro.
+              Un espacio donde documento ideas, prácticas y conceptos que encuentro interesantes en mi camino como desarrolladora.
               </p>
             </div>
 

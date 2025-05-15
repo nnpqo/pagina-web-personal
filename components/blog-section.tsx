@@ -25,9 +25,9 @@ export default function BlogSection({ posts }: BlogSectionProps) {
             <BookOpen className="h-4 w-4" />
             <span>Blog</span>
           </div>
-          <h2 className="text-3xl font-bold tracking-tight">Publicaciones Recientes</h2>
+          <h2 className="text-3xl font-bold tracking-tight">Blog</h2>
           <p className="text-muted-foreground max-w-3xl">
-            Artículos, tutoriales y análisis sobre temas actuales de ciberseguridad, hacking ético y desarrollo seguro.
+          Un espacio donde documento ideas, prácticas y conceptos que encuentro interesantes en mi camino como desarrolladora.
           </p>
         </div>
 

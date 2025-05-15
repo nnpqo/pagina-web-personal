@@ -1,7 +1,7 @@
 ---
 title: "Sistema Web para Gestión de Competencias ICPC - UMSS"
 description: "Plataforma completa desarrollada para la Universidad Mayor de San Simón, destinada a la organización, registro y control de competencias de programación como el ICPC."
-date: "2023-09-01"
+date: "Septiembre 2023"
 image: "/content-project/icpc-pagina.png"
 tags: ["React", "Laravel", "MariaDB", "SCRUM", "Frontend", "Documentación"]
 slug: "icpc-umss"
@@ -12,63 +12,64 @@ documents:
   - name: "Manual Técnico"
     url: "/documents/Manual-tecnico.pdf"
 ---
+<h2 class="text-2xl font-bold mb-4 mt-8">🎯 Objetivo del Proyecto</h2>
+<p class="text-base leading-relaxed text-muted-foreground">
+Este sistema fue desarrollado para automatizar la gestión de competencias internas de programación tipo ICPC en la Universidad Mayor de San Simón. Busca reemplazar procesos manuales por una plataforma centralizada y eficiente.
+</p>
 
-## 🎯 Objetivo del Proyecto
+<hr class="my-6"/>
 
-El proyecto fue desarrollado como respuesta a una convocatoria de la UMSS con el objetivo de automatizar la gestión de competencias internas de programación competitiva. Principalmente está enfocado en competencias tipo ICPC (International Collegiate Programming Contest).
-
-La plataforma busca reemplazar procesos manuales y dispersos con un sistema centralizado que:
-
-- Permita registrar estudiantes, equipos y entrenadores.
-- Gestione competencias internas clasificatorias.
-- Genere reportes automáticos por competencia, categoría y nivel.
-- Administre los calendarios y etapas del proceso ICPC.
-- Ofrezca interfaces para estudiantes, tutores y administradores.
-
----
-
-## 🏛️ Institución Beneficiaria
-
-**Universidad Mayor de San Simón (UMSS)**  
-Facultad de Ciencias y Tecnología  
+<h2 class="text-2xl font-bold mb-4 mt-8">🏛️ Institución Beneficiaria</h2>
+<p class="text-base leading-relaxed text-muted-foreground">
+<strong>Universidad Mayor de San Simón (UMSS)</strong><br/>
+Facultad de Ciencias y Tecnología<br/>
 Departamento de Ingeniería Informática
+</p>
 
----
+<hr class="my-6"/>
 
-## 🧠 Mi Rol en el Proyecto
+<h2 class="text-2xl font-bold mb-4 mt-8">🧠 Mi Rol en el Proyecto</h2>
+<ul class="list-disc pl-5 space-y-2 text-muted-foreground">
+  <li>Diseño e implementación del <strong>frontend</strong> con React + Ant Design.</li>
+  <li>Validaciones, navegación y experiencia de usuario.</li>
+  <li>Autoría del <strong>manual técnico</strong>.</li>
+  <li>Soporte funcional y pruebas de interfaz.</li>
+</ul>
 
-Participé como parte del equipo de desarrollo, asumiendo las siguientes **responsabilidades principales**:
+<hr class="my-6"/>
 
-- **Diseño e implementación del frontend** usando React y Ant Design.
-- Maquetado responsivo y navegación entre vistas (paneles por rol).
-- Conexión y consumo de API REST (Laravel).
-- Validaciones en formularios y control de errores.
-- Autoría del **Manual Técnico de Instalación**.
-- Soporte en pruebas y mejoras funcionales desde el lado del cliente.
+<h2 class="text-2xl font-bold mb-4 mt-8">🛠️ Tecnologías y Herramientas</h2>
+<ul class="list-disc pl-5 space-y-2 text-muted-foreground">
+  <li><strong>Frontend:</strong> React, Vite, Ant Design</li>
+  <li><strong>Backend:</strong> Laravel 8 + JWT</li>
+  <li><strong>Base de Datos:</strong> MariaDB</li>
+  <li><strong>Versionado:</strong> Git + GitHub</li>
+  <li><strong>Metodología:</strong> SCRUM</li>
+</ul>
 
----
+<p class="mt-4 text-muted-foreground">📄 Puedes ver el documento técnico <a href="/documents/Manual-tecnico.pdf" class="text-cyber-500 underline hover:text-cyber-700">aquí</a>.</p>
 
-## 🛠️ Tecnologías y Herramientas
+<hr class="my-6"/>
 
-- **Frontend:** React, Vite, Ant Design, Axios  
-- **Backend:** Laravel 8, JWT  
-- **Base de Datos:** MariaDB  
-- **Control de versiones:** Git + GitHub  
-- **Metodología Ágil:** SCRUM (sprints semanales con revisiones)  
-- **Documentación Técnica:** PDF redactado en formato profesional para TI
+<h2 class="text-2xl font-bold mb-4 mt-8">📸 Imagenes del proyecto</h2>
 
-📄 Puedes consultar el documento técnico aquí:  
-[Ver Manual Técnico](/documents/Manual-tecnico.pdf)
+<div class="img-grid">
+  <img src="/content-project/icpc3.png" alt="img 1" class="grid-img" />
+  <img src="/content-project/icpc2.png" alt="img 2" class="grid-img" />
+  <img src="/content-project/icpc8.png" alt="img 3" class="grid-img" />
+  <img src="/content-project/icpc7.png" alt="img 4" class="grid-img" />
+  <img src="/content-project/icpc9.png" alt="img 5" class="grid-img" />
+  <img src="/content-project/icpc10.png" alt="img 6" class="grid-img" />
+  <img src="/content-project/icpc11.png" alt="img 7" class="grid-img" />
+  <img src="/content-project/icpc13.png" alt="img 8" class="grid-img" />
+  <img src="/content-project/icpc14.png" alt="img 9" class="grid-img" />
+  <img src="/content-project/icpc15.png" alt="img 10" class="grid-img" />
+  <img src="/content-project/icpc16.png" alt="img 11" class="grid-img" />
+  <img src="/content-project/icpc12.png" alt="img 12" class="grid-img" />
+</div>
 
----
 
-## 📸 Capturas de Pantalla
 
-A continuación se muestran algunas vistas representativas del sistema:
 
-![Panel de Administrador](/content-project/icpc1.png)
-![Pantalla de inicio](/content-project/icpc10.png)
-![Login del sistema](/content-project/icpc11.png)
-![Página principal ICPC](/content-project/icpc-pagina.png)
-![Formulario de Inscripción](/content-project/icpc-inscripcion.png)
+
 

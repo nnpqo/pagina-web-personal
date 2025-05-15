@@ -18,8 +18,7 @@ export default async function FeaturedProjectsSection() {
           </div>
           <h2 className="text-3xl font-bold tracking-tight">Mis proyectos</h2>
           <p className="text-muted-foreground max-w-3xl">
-            Una selección de mis proyectos e investigaciones más relevantes en el campo de la ciberseguridad,
-            demostrando mis habilidades técnicas y mi enfoque en la protección de sistemas.
+          Algunos de los proyectos que he creado, investigado o experimentado. 
           </p>
         </div>
 

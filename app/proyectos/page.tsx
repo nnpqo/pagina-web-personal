@@ -25,9 +25,9 @@ export default async function ProyectosPage() {
         <section className="py-8">
           <div className="space-y-6">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight">Proyectos de Ciberseguridad</h1>
+              <h1 className="text-3xl font-bold tracking-tight">Proyectos</h1>
               <p className="text-muted-foreground max-w-3xl">
-                Herramientas, investigaciones y aplicaciones desarrolladas para fortalecer la seguridad digital.
+              Algunos de los proyectos que he creado, investigado o experimentado.
               </p>
             </div>
 
