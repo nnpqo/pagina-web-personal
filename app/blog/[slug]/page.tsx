@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="flex items-start gap-4">
               <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
                 <Image
-                  src={post.authorImage || "/placeholder.svg"}
+                  src={post.authorImage || "/FotoYanina.jpg"}
                   alt={post.authorName || "Autor"}
                   fill
                   className="object-cover"
@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div>
                 <h3 className="text-lg font-bold mb-2">Escrito por {post.authorName}</h3>
                 <p className="text-muted-foreground text-sm mb-3">
-                  Especialista en ciberseguridad y desarrollo seguro.
+                  Yanina Paola Quispe Orellana, desarrolladora de software. 
                 </p>
                 <SocialLinks />
               </div>
