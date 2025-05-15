@@ -58,7 +58,7 @@ export function SiteHeader() {
             Proyectos
           </Link>
           <Link
-            href="/blog"
+            href="/#blog"
             className={`text-sm font-medium transition-colors ${
               isActive("/blog") ? "text-cyber-500" : "hover:text-cyber-500"
             }`}

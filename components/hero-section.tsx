@@ -8,9 +8,9 @@ export function HeroSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 rounded-full bg-cyber-100 dark:bg-cyber-900/30 px-4 py-1.5 text-sm font-medium text-cyber-700 dark:text-cyber-300 mb-4">
+            {/* <div className="inline-flex items-center gap-2 rounded-full bg-cyber-100 dark:bg-cyber-900/30 px-4 py-1.5 text-sm font-medium text-cyber-700 dark:text-cyber-300 mb-4">
               <span>Blog</span>
-            </div>
+            </div> */}
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               <span className="text-cyber-500">Tecnologia</span> & Investigación
             </h1>
