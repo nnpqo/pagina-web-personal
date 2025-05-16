@@ -20,7 +20,7 @@ export function Footer() {
           </p>
         </div>
         <nav className="flex gap-4 sm:gap-6">
-          <Link
+          {/*<Link
             href="/politica-privacidad"
             className="text-xs text-muted-foreground hover:underline underline-offset-4"
           >
@@ -31,7 +31,7 @@ export function Footer() {
             className="text-xs text-muted-foreground hover:underline underline-offset-4"
           >
             Términos de Servicio
-          </Link>
+          </Link>*/}
         </nav>
       </div>
     </footer>

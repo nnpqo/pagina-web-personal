@@ -82,17 +82,17 @@ export function SiteHeader() {
             Contacto
           </Link>
         </nav>
-
+        
         {/* Botones de escritorio */}
         <div className="hidden md:flex items-center gap-2">
           <ThemeToggle />
-          <Button variant="outline" size="sm" asChild className="border-cyber-200 dark:border-cyber-800">
+          {/*<Button variant="outline" size="sm" asChild className="border-cyber-200 dark:border-cyber-800">
             <Link href="/cv.pdf" target="_blank">
               Descargar CV
             </Link>
-          </Button>
+          </Button>*/}
         </div>
-
+      
         {/* Controles móviles */}
         <div className="flex md:hidden items-center gap-2">
           <ThemeToggle />
@@ -142,13 +142,13 @@ export function SiteHeader() {
               >
                 Contacto
               </Link>
-              <div className="pt-2 pb-3 px-4">
+              {/*<div className="pt-2 pb-3 px-4">
                 <Button variant="outline" size="sm" asChild className="w-full border-cyber-200 dark:border-cyber-800">
                   <Link href="/cv.pdf" target="_blank" onClick={closeMenu}>
                     Descargar CV
                   </Link>
                 </Button>
-              </div>
+              </div>*/}
             </div>
           </nav>
         </div>

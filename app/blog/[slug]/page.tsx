@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div>
                 <h3 className="text-lg font-bold mb-2">Escrito por {post.authorName}</h3>
                 <p className="text-muted-foreground text-sm mb-3">
-                  Yanina Paola Quispe Orellana, desarrolladora de software. 
+                  Yanina P. Q. O. | Desarrolladora de software. 
                 </p>
                 <SocialLinks />
               </div>

@@ -3,7 +3,7 @@ title: "Sistema Web para Gestión de Competencias ICPC - UMSS"
 description: "Plataforma completa desarrollada para la Universidad Mayor de San Simón, destinada a la organización, registro y control de competencias de programación como el ICPC."
 date: "Septiembre 2023"
 image: "/content-project/icpc-pagina.png"
-tags: ["React", "Laravel", "MariaDB", "SCRUM", "Frontend", "Documentación"]
+tags: ["Laravel", "MariaDB", "SCRUM", "Frontend", "Documentación"]
 slug: "icpc-umss"
 category: "proyecto"
 role: "Desarrolladora Frontend y autora del manual técnico"
@@ -30,7 +30,7 @@ Departamento de Ingeniería Informática
 
 <h2 class="text-2xl font-bold mb-4 mt-8">🧠 Mi Rol en el Proyecto</h2>
 <ul class="list-disc pl-5 space-y-2 text-muted-foreground">
-  <li>Diseño e implementación del <strong>frontend</strong> con React + Ant Design.</li>
+  <li>Diseño e implementación del <strong>frontend</strong> con Laravel.</li>
   <li>Validaciones, navegación y experiencia de usuario.</li>
   <li>Autoría del <strong>manual técnico</strong>.</li>
   <li>Soporte funcional y pruebas de interfaz.</li>
@@ -40,7 +40,7 @@ Departamento de Ingeniería Informática
 
 <h2 class="text-2xl font-bold mb-4 mt-8">🛠️ Tecnologías y Herramientas</h2>
 <ul class="list-disc pl-5 space-y-2 text-muted-foreground">
-  <li><strong>Frontend:</strong> React, Vite, Ant Design</li>
+  <li><strong>Frontend:</strong> Laravel, Vite, Ant Design</li>
   <li><strong>Backend:</strong> Laravel 8 + JWT</li>
   <li><strong>Base de Datos:</strong> MariaDB</li>
   <li><strong>Versionado:</strong> Git + GitHub</li>

@@ -130,26 +130,23 @@ export default async function Home() {
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">Seguridad Ofensiva</h3>
                 <div className="flex flex-wrap gap-2">
-                  <SkillBadge name="Análisis de Vulnerabilidades" />
                   <SkillBadge name="Ingeniería Social" />
                 </div>
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">Seguridad Defensiva</h3>
                 <div className="flex flex-wrap gap-2">
-                  <SkillBadge name="SIEM" />
-                  <SkillBadge name="Análisis de Malware" />
                   <SkillBadge name="Forense Digital" />
-                  <SkillBadge name="Gestión de Incidentes" />
                 </div>
               </div>
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">Tecnologías y Herramientas</h3>
                 <div className="flex flex-wrap gap-2">
-                  <SkillBadge name="Kali Linux" />
+                  <SkillBadge name="Kali" />
                   <SkillBadge name="Wireshark" />
                   <SkillBadge name="Burp Suite" />
                   <SkillBadge name="Power BI" />
+                  <SkillBadge name="Next.js" />
                 </div>
               </div>
               <div className="space-y-4">
@@ -157,11 +154,11 @@ export default async function Home() {
                 <div className="flex flex-wrap gap-2">
                   <SkillBadge name="Python" />
                   <SkillBadge name="Bash" />
-                  <SkillBadge name="PowerShell" />
+                  <SkillBadge name="React" />
                   <SkillBadge name="JavaScript" />
                   <SkillBadge name="SQL" />
                   <SkillBadge name="Java" />
-                  <SkillBadge name="Assembler" />
+                  <SkillBadge name="Assembly" />
                   <SkillBadge name="Haskell" />
                 </div>
               </div>
