@@ -53,13 +53,22 @@ export default async function Home() {
                seguir creciendo, colaborar con otros y aportar valor desde donde me encuentre.
               </p>
               <div className="flex gap-4">
-                <Button asChild variant="default" className="bg-cyber-600 hover:bg-cyber-700">
-                  <Link href="#contacto">Contactar</Link>
-                </Button>
-                <Button asChild variant="outline" className="border-cyber-200 dark:border-cyber-800">
-                  <Link href="#proyectos">Ver Proyectos</Link>
-                </Button>
-              </div>
+  <Button
+    asChild
+    variant="default"
+    className="bg-cyber-600 hover:bg-cyber-700 min-h-[44px]"
+  >
+    <Link href="#contacto">Contactar</Link>
+  </Button>
+  <Button
+    asChild
+    variant="outline"
+    className="border-cyber-200 dark:border-cyber-800 min-h-[44px]"
+  >
+    <Link href="#proyectos">Ver Proyectos</Link>
+  </Button>
+</div>
+
             </div>
 
             {/* EDUCACIÓN, CERTIFICACIONES, IDIOMAS */}
@@ -80,7 +89,7 @@ export default async function Home() {
                       <p className="text-xs text-muted-foreground">Fortinet</p>
                     </div>
                     <div className="rounded-md border p-2 text-center bg-white/50 dark:bg-gray-800/50">
-                      <p className="font-medium">Carrera Seguridad Informática</p>
+                      <p className="font-medium">Seguridad Informática</p>
                       <p className="text-xs text-muted-foreground">Platzi</p>
                     </div>
                   </div>

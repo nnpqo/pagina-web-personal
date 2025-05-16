@@ -19,17 +19,23 @@ export function HeroSection() {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-cyber-600 to-cyber-500 hover:from-cyber-700 hover:to-cyber-600"
-            >
-              <Link href="#proyectos">Explorar Proyectos</Link>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="border-cyber-200 dark:border-cyber-800">
-              <Link href="#blog">Leer Blog</Link>
-            </Button>
-          </div>
+  <Button
+    asChild
+    size="lg"
+    className="bg-gradient-to-r from-cyber-600 to-cyber-500 hover:from-cyber-700 hover:to-cyber-600 min-h-[44px]"
+  >
+    <Link href="#proyectos">Explorar Proyectos</Link>
+  </Button>
+  <Button
+    asChild
+    variant="outline"
+    size="lg"
+    className="border-cyber-200 dark:border-cyber-800 min-h-[44px]"
+  >
+    <Link href="#blog">Leer Blog</Link>
+  </Button>
+</div>
+
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 md:mt-12">
             <div className="flex flex-col items-center space-y-2 rounded-lg border bg-white/80 dark:bg-gray-800/50 p-4 transition-all hover:shadow-md">
               <div className="rounded-full bg-cyber-100 dark:bg-cyber-900/30 p-2">
