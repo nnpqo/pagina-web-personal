@@ -17,7 +17,6 @@ documents:
 Este sistema fue desarrollado para automatizar la gestión de competencias internas de programación tipo ICPC en la Universidad Mayor de San Simón. Busca reemplazar procesos manuales por una plataforma centralizada y eficiente.
 </p>
 
-<hr class="my-6"/>
 
 <h2 class="text-2xl font-bold mb-4 mt-8">🏛️ Institución Beneficiaria</h2>
 <p class="text-base leading-relaxed text-muted-foreground">
@@ -26,7 +25,6 @@ Facultad de Ciencias y Tecnología<br/>
 Departamento de Ingeniería Informática
 </p>
 
-<hr class="my-6"/>
 
 <h2 class="text-2xl font-bold mb-4 mt-8">🧠 Mi Rol en el Proyecto</h2>
 <ul class="list-disc pl-5 space-y-2 text-muted-foreground">
@@ -36,7 +34,6 @@ Departamento de Ingeniería Informática
   <li>Soporte funcional y pruebas de interfaz.</li>
 </ul>
 
-<hr class="my-6"/>
 
 <h2 class="text-2xl font-bold mb-4 mt-8">🛠️ Tecnologías y Herramientas</h2>
 <ul class="list-disc pl-5 space-y-2 text-muted-foreground">
@@ -49,7 +46,6 @@ Departamento de Ingeniería Informática
 
 <p class="mt-4 text-muted-foreground">📄 Puedes ver el documento técnico <a href="/documents/Manual-tecnico.pdf" class="text-cyber-500 underline hover:text-cyber-700">aquí</a>.</p>
 
-<hr class="my-6"/>
 
 <h2 class="text-2xl font-bold mb-4 mt-8">📸 Imagenes del proyecto</h2>
 
