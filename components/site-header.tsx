@@ -22,8 +22,8 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white dark:bg-gray-900">
-      <div className="container relative flex items-center justify-between h-16 px-4 md:px-0">
-        {/* Logo a la izquierda */}
+      <div className="container flex h-16 items-center justify-between px-4 md:grid md:grid-cols-3">
+        {/* Zona izquierda: logo */}
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl" onClick={closeMenu}>
             <Image
@@ -37,8 +37,8 @@ export function SiteHeader() {
           </Link>
         </div>
 
-        {/* Enlaces centrados solo en escritorio */}
-        <nav className="hidden md:flex absolute inset-0 justify-center items-center gap-6">
+        {/* Zona central: navegación en escritorio */}
+        <nav className="hidden md:flex items-center justify-center gap-6">
           <Link href="/#sobre-mi" className={`text-sm font-medium transition-colors ${isActive("/#sobre-mi") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Sobre Mí</Link>
           <Link href="/#proyectos" className={`text-sm font-medium transition-colors ${isActive("/#proyectos") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Proyectos</Link>
           <Link href="/#blog" className={`text-sm font-medium transition-colors ${isActive("/blog") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Blog</Link>
@@ -46,8 +46,8 @@ export function SiteHeader() {
           <Link href="/#contacto" className={`text-sm font-medium transition-colors ${isActive("/#contacto") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Contacto</Link>
         </nav>
 
-        {/* Controles a la derecha */}
-        <div className="flex items-center gap-2">
+        {/* Zona derecha: controles */}
+        <div className="flex items-center justify-end gap-2">
           <ThemeToggle />
           <Button
             variant="ghost"
