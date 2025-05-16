@@ -58,7 +58,7 @@ export function SiteHeader() {
           <Link
             href="/#blog"
             className={`text-sm font-medium transition-colors ${
-              isActive("/blog") ? "text-cyber-500" : "hover:text-cyber-500"
+              isActive("#/blog") ? "text-cyber-500" : "hover:text-cyber-500"
             }`}
           >
             Blog
