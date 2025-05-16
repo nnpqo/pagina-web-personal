@@ -1,4 +1,3 @@
-// ✅ app/blog/[slug]/page.tsx
 
 import { notFound } from "next/navigation"
 import Image from "next/image"
@@ -19,7 +18,7 @@ interface BlogPostPageProps {
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = await Promise.resolve(params); // ✅ evita el warning
+  const { slug } = await Promise.resolve(params); 
 
   const post = await getBlogBySlug(slug);
   if (!post) return notFound();
@@ -48,25 +47,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <h1 className="text-3xl md:text-4xl font-bold mb-4">{post.title}</h1>
 
             <div className="flex flex-wrap gap-6 mb-8 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <div className="relative w-8 h-8 rounded-full overflow-hidden">
-                  <Image
-                    src={post.authorImage || "/placeholder.svg"}
-                    alt={post.authorName || "Autor"}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <span>{post.authorName}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                <span>{post.date}</span>
-              </div>
-              <Button variant="ghost" size="sm" className="h-8 gap-1 text-muted-foreground">
-                <Share2 className="h-4 w-4" />
-                <span>Compartir</span>
-              </Button>
+              
             </div>
           </div>
 
@@ -90,6 +71,27 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </Badge>
             ))}
           </div>
+          <div className="flex flex-wrap gap-6 mb-8 text-sm text-muted-foreground">
+              {/*<div className="flex items-center gap-2">
+                <div className="relative w-8 h-8 rounded-full overflow-hidden">
+                  <Image
+                    src={post.authorImage || "/placeholder.svg"}
+                    alt={post.authorName || "Autor"}
+                    fill
+                    className="object-cover"
+                  /> 
+                </div>
+                <span>{post.authorName}</span>
+              </div> */}
+              <div className="flex items-center gap-2">
+                <Calendar className="h-4 w-4" />
+                <span>{post.date}</span>
+              </div>
+              <Button variant="ghost" size="sm" className="h-8 gap-1 text-muted-foreground">
+                <Share2 className="h-4 w-4" />
+                <span>Compartir</span>
+              </Button>
+            </div>
 
           <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
             <ReactMarkdown>{post.content}</ReactMarkdown>
