@@ -1,7 +1,7 @@
 ---
 title: "Ingeniería social: El hacker no necesita un teclado"
 description: "Conoce el verdadero riesgo detrás de la manipulación humana en ciberseguridad. Un enfoque real sobre la ingeniería social y cómo protegerse."
-date: "15 mayo 2025"
+date: "16 mayo 2025"
 image: "/content-blog/ingenieria-social/is-portada.png"
 tags: ["Ingeniería Social", "Ciberseguridad", "Hacking Humano", "Manipulación"]
 slug: "ingenieria-social"
