@@ -143,6 +143,7 @@ export default async function Home() {
                   <SkillBadge name="Burp Suite" />
                   <SkillBadge name="Power BI" />
                   <SkillBadge name="Next.js" />
+                  <SkillBadge name="Figma" />
                 </div>
               </div>
               <div className="space-y-4">
