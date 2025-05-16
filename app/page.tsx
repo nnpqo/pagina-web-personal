@@ -12,6 +12,7 @@ import FeaturedProjectsSection from "@/components/featured-project-section";
 import { getAllBlogs } from "@/lib/markdown";
 import BlogSection from "@/components/blog-section";
 
+
 export default async function Home() {
   const blogs = await getAllBlogs();
 

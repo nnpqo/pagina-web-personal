@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, Share2 } from "lucide-react"
 import { SocialLinks } from "@/components/social-links"
+import BotonCompartir from "@/components/button-share";
 
 interface BlogPostPageProps {
   params: {
@@ -87,10 +88,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Calendar className="h-4 w-4" />
                 <span>{post.date}</span>
               </div>
-              <Button variant="ghost" size="sm" className="h-8 gap-1 text-muted-foreground">
-                <Share2 className="h-4 w-4" />
-                <span>Compartir</span>
-              </Button>
+              <BotonCompartir />
             </div>
 
           <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
