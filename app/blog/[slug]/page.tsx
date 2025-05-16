@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, Share2 } from "lucide-react"
 import { SocialLinks } from "@/components/social-links"
 import BotonCompartir from "@/components/button-share";
+import rehypeRaw from "rehype-raw";
 
 interface BlogPostPageProps {
   params: {
@@ -92,7 +93,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
 
           <div className="prose prose-slate dark:prose-invert max-w-none mb-12">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
           </div>
 
           <div className="mb-10 p-6 bg-white/80 dark:bg-gray-800/50 rounded-lg border">

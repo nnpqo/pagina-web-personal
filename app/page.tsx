@@ -128,26 +128,13 @@ export default async function Home() {
               </div>
               <h2 className="text-3xl font-bold tracking-tight">Competencias Técnicas</h2>
               <p className="text-muted-foreground max-w-3xl">
-                Mis habilidades técnicas se desarrollan en el área de la ciberseguridad defensiva, 
-                con enfoque en la detección de amenazas, análisis de vulnerabilidades, automatización 
-                de controles de calidad y buenas prácticas de desarrollo seguro. También exploro el 
-                uso de la inteligencia artificial para fortalecer la gestión de incidentes y la toma
-                de decisiones basada en datos.
+                Mis habilidades técnicas se desarrollan en el construir software con enfoque en la automatización, 
+                la calidad y la seguridad, integrando soluciones que combinan lógica, análisis y tecnología
+                para resolver problemas de forma eficiente y confiable.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2">
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold">Seguridad Ofensiva</h3>
-                <div className="flex flex-wrap gap-2">
-                  <SkillBadge name="Ingeniería Social" />
-                </div>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold">Seguridad Defensiva</h3>
-                <div className="flex flex-wrap gap-2">
-                  <SkillBadge name="Forense Digital" />
-                </div>
-              </div>
+          
               <div className="space-y-4">
                 <h3 className="text-xl font-bold">Tecnologías y Herramientas</h3>
                 <div className="flex flex-wrap gap-2">
@@ -172,6 +159,13 @@ export default async function Home() {
                 </div>
               </div>
             </div>
+            <div className="space-y-4">
+                <h3 className="text-xl font-bold">Seguridad</h3>
+                <div className="flex flex-wrap gap-2">
+                  <SkillBadge name="Ingeniería Social" />
+                  <SkillBadge name="Forense Digital" />
+                </div>
+              </div>
           </div>
         </section>
 
