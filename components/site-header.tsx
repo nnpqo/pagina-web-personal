@@ -23,7 +23,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white dark:bg-gray-900">
       <div className="container flex h-16 items-center justify-between px-4 md:grid md:grid-cols-3">
-        {/* Zona izquierda: logo */}
+        {/* Logo */}
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl" onClick={closeMenu}>
             <Image
@@ -37,17 +37,52 @@ export function SiteHeader() {
           </Link>
         </div>
 
-        {/* Zona central: navegación en escritorio */}
-        <nav className="hidden md:flex items-center justify-center gap-6">
-          <Link href="/#sobre-mi" className={`text-sm font-medium transition-colors ${isActive("/#sobre-mi") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Sobre Mí</Link>
-          <Link href="/#proyectos" className={`text-sm font-medium transition-colors ${isActive("/#proyectos") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Proyectos</Link>
-          <Link href="/#blog" className={`text-sm font-medium transition-colors ${isActive("/blog") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Blog</Link>
-          <Link href="/#habilidades" className={`text-sm font-medium transition-colors ${isActive("/#habilidades") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Skills</Link>
-          <Link href="/#contacto" className={`text-sm font-medium transition-colors ${isActive("/#contacto") ? "text-cyber-500" : "hover:text-cyber-500"}`}>Contacto</Link>
+        {/* Enlaces centrados */}
+        <nav className="hidden md:flex items-center justify-center gap-4 md:gap-6">
+          <Link
+            href="/#sobre-mi"
+            className={`text-sm font-medium transition-colors whitespace-nowrap ${
+              isActive("/#sobre-mi") ? "text-cyber-500" : "hover:text-cyber-500"
+            }`}
+          >
+            Sobre Mí
+          </Link>
+          <Link
+            href="/#proyectos"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/#proyectos") ? "text-cyber-500" : "hover:text-cyber-500"
+            }`}
+          >
+            Proyectos
+          </Link>
+          <Link
+            href="/#blog"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/blog") ? "text-cyber-500" : "hover:text-cyber-500"
+            }`}
+          >
+            Blog
+          </Link>
+          <Link
+            href="/#habilidades"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/#habilidades") ? "text-cyber-500" : "hover:text-cyber-500"
+            }`}
+          >
+            Skills
+          </Link>
+          <Link
+            href="/#contacto"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/#contacto") ? "text-cyber-500" : "hover:text-cyber-500"
+            }`}
+          >
+            Contacto
+          </Link>
         </nav>
 
-        {/* Zona derecha: controles */}
-        <div className="flex items-center justify-end gap-2">
+        {/* Controles */}
+        <div className="flex items-center justify-end gap-2 pr-4 md:pr-6">
           <ThemeToggle />
           <Button
             variant="ghost"
@@ -61,23 +96,43 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* Menú móvil desplegable */}
+      {/* Menú móvil */}
       {isMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
           <nav className="px-4 py-4 space-y-2">
-            <Link href="/#sobre-mi" onClick={closeMenu} className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              href="/#sobre-mi"
+              onClick={closeMenu}
+              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Sobre Mí
             </Link>
-            <Link href="/#proyectos" onClick={closeMenu} className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              href="/#proyectos"
+              onClick={closeMenu}
+              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Proyectos
             </Link>
-            <Link href="/#blog" onClick={closeMenu} className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              href="/#blog"
+              onClick={closeMenu}
+              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Blog
             </Link>
-            <Link href="/#habilidades" onClick={closeMenu} className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              href="/#habilidades"
+              onClick={closeMenu}
+              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Skills
             </Link>
-            <Link href="/#contacto" onClick={closeMenu} className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">
+            <Link
+              href="/#contacto"
+              onClick={closeMenu}
+              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
               Contacto
             </Link>
           </nav>
