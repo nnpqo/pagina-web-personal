@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Techbynina",
   },
   description:
-    "Portafolio profesional de Yanina, desarrolladora especializada en ciberseguridad, control de calidad y desarrollo web moderno.",
+    "Portafolio profesional de Yanina, desarrolladora de software",
   keywords: [
     "Desarrolladora web",
     "Ciberseguridad",
@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     "Desarrolladora de software",
     "Aplicaciones web",
     "Aplicaciones móviles",
+    "Ingeniero en cochabamba",
+    "Creador de paginas web en cochabamba",
+    "ciberseguridad en cochabamba",
+    "Desarrolladora de software en cochabamba",
+    "Desarrolladora de software en Bolivia",
   ],
   authors: [{ name: "Yanina", url: "https://techbynina.tech" }],
   creator: "Yanina",
@@ -41,7 +46,7 @@ export const metadata: Metadata = {
       "Explora los proyectos, investigaciones y publicaciones de Yanina en su sitio web Techbynina.",
     url: "https://techbynina.tech",
     siteName: "Techbynina",
-    locale: "es_ES",
+    locale: "es_BO",
     type: "website",
     images: [
       {
@@ -51,14 +56,6 @@ export const metadata: Metadata = {
         alt: "Portafolio de Techbynina",
       },
     ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Techbynina | Desarrolladora de Software",
-    description: "Portafolio de Yanina con enfoque en desarrollo web y ciberseguridad.",
-    images: ["https://techbynina.tech/Icon.png"],
-    creator: "@tu_usuario_twitter", 
   },
 
   icons: {
