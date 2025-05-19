@@ -39,7 +39,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
         </div>
 
         <article className="max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{project.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 ">{project.title}</h1>
 
           <div className="flex flex-wrap items-center gap-6 mb-6 text-sm text-muted-foreground"></div>
           <div className="relative h-64 md:h-96 w-full mb-8 rounded-lg overflow-hidden">

@@ -11,6 +11,7 @@ import { Footer } from "@/components/site-footer";
 import FeaturedProjectsSection from "@/components/featured-project-section";
 import { getAllBlogs } from "@/lib/markdown";
 import BlogSection from "@/components/blog-section";
+import { ScrollReveal } from "@/components/scrollReveal";
 
 
 export default async function Home() {
@@ -20,9 +21,11 @@ export default async function Home() {
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
       <SiteHeader />
       <main className="container py-8 md:py-12">
+        <ScrollReveal>
         <HeroSection />
-
+        </ScrollReveal>
         {/* SOBRE MÍ */}
+        <ScrollReveal>
         <section id="sobre-mi" className="py-12 md:py-16">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="flex flex-col items-center lg:items-start space-y-4">
@@ -53,24 +56,22 @@ export default async function Home() {
                seguir creciendo, colaborar con otros y aportar valor desde donde me encuentre.
               </p>
               <div className="flex gap-4">
-  <Button
-    asChild
-    variant="default"
-    className="bg-cyber-600 hover:bg-cyber-700 min-h-[44px]"
-  >
-    <Link href="#contacto">Contactar</Link>
-  </Button>
-  <Button
-    asChild
-    variant="outline"
-    className="border-cyber-200 dark:border-cyber-800 min-h-[44px]"
-  >
-    <Link href="#proyectos">Ver Proyectos</Link>
-  </Button>
-</div>
-
+                <Button
+                  asChild
+                  variant="default"
+                  className="bg-cyber-600 hover:bg-cyber-700 min-h-[44px]"
+                >
+                  <Link href="#contacto">Contactar</Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-cyber-200 dark:border-cyber-800 min-h-[44px]"
+                >
+                  <Link href="#proyectos">Ver Proyectos</Link>
+                </Button>
+              </div>
             </div>
-
             {/* EDUCACIÓN, CERTIFICACIONES, IDIOMAS */}
             <div className="rounded-lg border bg-white/80 dark:bg-gray-800/50 p-8 shadow-sm">
               <div className="space-y-4">
@@ -111,14 +112,19 @@ export default async function Home() {
             </div>
           </div>
         </section>
-
-        {/* PROYECTOS */}
-        <FeaturedProjectsSection />
-
-        {/* BLOG */}
-        <BlogSection posts={blogs} />
+        </ScrollReveal>
         
+        {/* SECCIÓN DE PROYECTOS DESTACADOS */}
+        {/* PROYECTOS */}
+        <ScrollReveal>
+        <FeaturedProjectsSection />
+        
+        
+        <BlogSection/>
+        </ScrollReveal>
+        {/* SECCIÓN DE BLOG */}
         {/* HABILIDADES */}
+        <ScrollReveal>
         <section id="habilidades" className="py-12 md:py-16 border-t">
           <div className="space-y-6">
             <div className="space-y-2">
@@ -169,8 +175,9 @@ export default async function Home() {
               </div>
           </div>
         </section>
-
+        </ScrollReveal>
         {/* CONTACTO */}
+        <ScrollReveal>
         <section id="contacto" className="py-12 md:py-16 border-t">
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="space-y-4">
@@ -194,6 +201,7 @@ export default async function Home() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
       </main>
       <Footer />
     </div>

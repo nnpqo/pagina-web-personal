@@ -1,25 +1,17 @@
-import Link from "next/link";
-import Image from "next/image";
-import { BookOpen } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
-interface BlogCardProps {
-  slug: string;
-  title: string;
-  description: string;
-  date: string;
-  image: string;
-  category?: string;
-}
+import Link from "next/link"
+import Image from "next/image"
+import { BookOpen } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { getAllBlogs } from "@/lib/markdown"
 
-interface BlogSectionProps {
-  posts: BlogCardProps[];
-}
+export default async function BlogSection() {
+  const posts = await getAllBlogs()
 
-export default function BlogSection({ posts }: BlogSectionProps) {
   return (
     <section id="blog" className="py-12 md:py-16 border-t">
       <div className="space-y-6">
+        {/* Encabezado */}
         <div className="space-y-2">
           <div className="inline-flex items-center gap-2 rounded-md bg-cyber-100 dark:bg-cyber-900/30 px-3 py-1 text-sm font-medium">
             <BookOpen className="h-4 w-4" />
@@ -27,10 +19,11 @@ export default function BlogSection({ posts }: BlogSectionProps) {
           </div>
           <h2 className="text-3xl font-bold tracking-tight">Blog</h2>
           <p className="text-muted-foreground max-w-3xl">
-          Un espacio donde documento ideas, prácticas y conceptos que encuentro interesantes en mi camino como desarrolladora.
+            Un espacio donde documento ideas, prácticas y conceptos que encuentro interesantes en mi camino como desarrolladora.
           </p>
         </div>
 
+        {/* Tarjetas */}
         <div className="grid gap-6 md:grid-cols-3">
           {posts.map((post) => (
             <Link
@@ -53,7 +46,7 @@ export default function BlogSection({ posts }: BlogSectionProps) {
               </div>
               <div className="p-4 flex-1 flex flex-col">
                 <p className="text-xs text-cyber-500 mb-2">{post.date}</p>
-                <h3 className="font-bold text-lg mb-2 group-hover:text-cyber-500 transition-colors">
+                <h3 className="font-bold text-lg mb-2 text-foreground group-hover:text-cyber-500 transition-colors no-underline">
                   {post.title}
                 </h3>
                 <p className="text-muted-foreground text-sm flex-1">{post.description}</p>
@@ -80,6 +73,7 @@ export default function BlogSection({ posts }: BlogSectionProps) {
           ))}
         </div>
 
+        {/* Botón más publicaciones */}
         <div className="flex justify-center">
           <Button asChild variant="outline" className="border-cyber-200 dark:border-cyber-800">
             <Link href="/blog">Ver todas las publicaciones</Link>
@@ -87,5 +81,5 @@ export default function BlogSection({ posts }: BlogSectionProps) {
         </div>
       </div>
     </section>
-  );
+  )
 }
