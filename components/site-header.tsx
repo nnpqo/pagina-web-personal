@@ -66,7 +66,7 @@ export function SiteHeader() {
           <Link
             href="/#ctf"
             className={`text-sm font-medium transition-colors ${
-              isActive("/ctf") ? "text-cyber-500" : "hover:text-cyber-500"
+              isActive("/#ctf") ? "text-cyber-500" : "hover:text-cyber-500"
             }`}
           >
             CTFs
