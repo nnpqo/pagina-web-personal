@@ -43,9 +43,7 @@ Una vez conectados identificamos que nos da un hash MD5 ya que tiene 32 caracter
 <p class="text-base leading-relaxed text-muted-foreground">
 Una vez tenemos el hash usamos una herramienta llamada 
 </p>
-<a href="https://crackstation.net/">
-  https://crackstation.net/
-</a>
+<a href="https://crackstation.net/" class="text-cyber-500 underline hover:text-cyber-700">https://crackstation.net/</a>
 <p class="text-base leading-relaxed text-muted-foreground">
 Es un sitio web que permite crackear hashes de contraseñas mediante fuerza bruta con un diccionario masivo precomputado. 
 </p>

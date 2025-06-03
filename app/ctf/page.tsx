@@ -23,7 +23,7 @@ export default async function CtfsPage() {
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tight">CTFs Resueltos</h1>
               <p className="text-muted-foreground max-w-3xl">
-                Capturas de bandera resueltas como parte del proceso de aprendizaje en ciberseguridad.
+                Aquí comparto los retos de CTF (Capture The Flag) que he resuelto, junto con explicaciones detalladas paso a paso.
               </p>
             </div>
 
