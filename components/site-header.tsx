@@ -56,20 +56,20 @@ export function SiteHeader() {
             Proyectos
           </Link>
           <Link
-            href="/#ctf"
-            className={`text-sm font-medium transition-colors ${
-              isActive("/ctf") ? "text-cyber-500" : "hover:text-cyber-500"
-            }`}
-          >
-            CTFs
-          </Link>
-          <Link
             href="/#blog"
             className={`text-sm font-medium transition-colors ${
               isActive("/#blog") ? "text-cyber-500" : "hover:text-cyber-500"
             }`}
           >
             Blog
+          </Link>
+          <Link
+            href="/#ctf"
+            className={`text-sm font-medium transition-colors ${
+              isActive("/ctf") ? "text-cyber-500" : "hover:text-cyber-500"
+            }`}
+          >
+            CTFs
           </Link>
           <Link
             href="/#habilidades"
@@ -123,18 +123,18 @@ export function SiteHeader() {
               Proyectos
             </Link>
             <Link
-              href="/#ctf"
-              onClick={closeMenu}
-              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-            >
-              CTFs
-            </Link>
-            <Link
               href="/#blog"
               onClick={closeMenu}
               className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Blog
+            </Link>
+            <Link
+              href="/#ctf"
+              onClick={closeMenu}
+              className="block text-base font-medium py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              CTFs
             </Link>
             <Link
               href="/#habilidades"
