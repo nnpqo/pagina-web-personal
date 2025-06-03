@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SiteHeader } from "@/components/site-header";
+import { Footer } from "@/components/site-footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,8 +14,7 @@ export const metadata: Metadata = {
     default: "Techbynina | Desarrolladora de Software",
     template: "%s | Techbynina",
   },
-  description:
-    "Portafolio profesional de Yanina, desarrolladora de software",
+  description: "Portafolio profesional de Yanina, desarrolladora de software",
   keywords: [
     "Desarrolladora web",
     "Ciberseguridad",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://techbynina.tech/Icon.png", 
+        url: "https://techbynina.tech/Icon.png",
         width: 1200,
         height: 630,
         alt: "Portafolio de Techbynina",
@@ -72,14 +73,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SiteHeader />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

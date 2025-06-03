@@ -4,8 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 import ReactMarkdown from "react-markdown"
 import { getBlogBySlug, getAllBlogs } from "@/lib/markdown"
-import { SiteHeader } from "@/components/site-header"
-import { Footer } from "@/components/site-footer"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Calendar, Share2 } from "lucide-react"
@@ -32,7 +30,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
-      <SiteHeader />
       <main className="container py-8 md:py-12">
         <div className="flex items-center gap-2 mb-8">
           <Button variant="ghost" size="sm" asChild>
@@ -150,7 +147,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           )}
         </article>
       </main>
-      <Footer />
     </div>
   );
 }

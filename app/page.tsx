@@ -6,12 +6,11 @@ import { SkillBadge } from "@/components/skill-badge";
 import { HeroSection } from "@/components/hero-section";
 import { ContactForm } from "@/components/contact-form";
 import { SocialLinks } from "@/components/social-links";
-import { SiteHeader } from "@/components/site-header";
-import { Footer } from "@/components/site-footer";
 import FeaturedProjectsSection from "@/components/featured-project-section";
 import { getAllBlogs } from "@/lib/markdown";
 import BlogSection from "@/components/blog-section";
 import { ScrollReveal } from "@/components/scrollReveal";
+import CtfSection from "@/components/ctfs-section"
 
 
 export default async function Home() {
@@ -19,7 +18,6 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyber-50 via-slate-50 to-cyber-100 dark:from-gray-900 dark:via-gray-800 dark:to-cyber-950">
-      <SiteHeader />
       <main className="container py-8 md:py-12">
         <ScrollReveal>
         <HeroSection />
@@ -123,6 +121,10 @@ export default async function Home() {
         <BlogSection/>
         </ScrollReveal>
         {/* SECCIÓN DE BLOG */}
+        <ScrollReveal>
+          <CtfSection/>
+        </ScrollReveal>
+        
         {/* HABILIDADES */}
         <ScrollReveal>
         <section id="habilidades" className="py-12 md:py-16 border-t">
@@ -203,7 +205,6 @@ export default async function Home() {
         </section>
         </ScrollReveal>
       </main>
-      <Footer />
     </div>
   );
 }
