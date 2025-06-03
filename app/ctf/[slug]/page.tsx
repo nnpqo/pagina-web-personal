@@ -42,7 +42,7 @@ export default async function CtfDetailPage({ params }: CtfPageProps) {
               <Badge
                 key={tag}
                 variant="secondary"
-                className="bg-cyber-100 text-cyber-700 dark:bg-cyber-900/30 dark:text-cyber-300"
+                className="bg-cyber-500 text-white text-xs px-2 py-1 rounded-full"
               >
                 {tag}
               </Badge>
